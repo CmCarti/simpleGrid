@@ -1,13 +1,4 @@
-/* This is the quick-start version of simpleGrid. It contains predefined margins between columns. The current margin is 10px on all sides, however if you would like to change them simply find the margin in all of the column sizes and change the margin property and the width property to match.
 
-
-ex.: .col-d-1 {
-        margin: 10px 20px 10px 20px
-        width:calc(8.3333333% - 40px);
-    }
-this would change the margins to be 20px on the left and right, while maintaining that snazzy grid effect. 
-
-*/
 
 .container {
     margin-left: auto;
