@@ -1,0 +1,136 @@
+/* This is the quick-start version of simpleGrid. It contains predefined margins between columns. The current margin is 10px on all sides, however if you would like to change them simply find the margin in all of the column sizes and change the margin property and the width property to match.
+
+
+ex.: .col-d-1 {
+        margin: 10px 20px 10px 20px
+        width:calc(8.3333333% - 40px);
+    }
+this would change the margins to be 20px on the left and right, while maintaining that snazzy grid effect. 
+
+*/
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    width: 100%;
+    
+}
+
+.container *{
+    box-sizing: border-box;
+    
+}
+
+.container-full {
+    width: 100%;
+    
+}
+
+.row {
+    margin-top: 30px;
+    
+}
+.row:before, 
+.row:after{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+[class*='col-']{
+    float: left;
+    min-height: 1px;
+    width: 8.333%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.col-m-1 {
+    width: 8.333%;
+}
+.col-m-2 {
+    width: 16.666%;
+}
+.col-m-3 {
+    width: 25%;
+}
+.col-m-4 {
+    width: 33.333%;
+}
+.col-m-5 {
+    width: 41.666%;
+}
+.col-m-6 {
+    width: 50%;
+}
+.col-m-7 {
+    width: 58.333%;
+}
+.col-m-8 {
+    width: 66.666%;
+}
+.col-m-9 {
+    width: 75%;
+}
+.col-m-10 {
+    width: 83.333%;
+}
+.col-m-11 {
+    width: 91.666%;
+}
+.col-m-12 {
+    width: 100%;
+}
+@media only screen and (min-width: 960px){
+    .hidden-d {
+        display: none;
+    }
+    
+     .col-d-1 {
+        width: 8.333%;
+    }
+    .col-d-2 {
+        width: 16.666%;
+    }
+    .col-d-3 {
+        width: 25%;
+    }
+    .col-d-4 {
+        width: 33.333%;
+    }
+    .col-d-5 {
+        width: 41.666%;
+    }
+    .col-d-6 {
+        width: 50%;
+    }
+    .col-d-7 {
+        width: 58.333%;
+    }
+    .col-d-8 {
+        width: 66.666%;
+    }
+    .col-d-9 {
+        width: 75%;
+    }
+    .col-d-10 {
+        width: 83.333%;
+    }
+    .col-d-11 {
+        width: 91.666%;
+    }
+    .col-d-12 {
+        width: 100%;
+    }   
+    
+}
+@media only screen and (max-width: 959px){
+    .hidden-m {
+        display: none;
+    } 
+    [class*='col-d']{  
+        width: 100%;
+    }
+    
+}
